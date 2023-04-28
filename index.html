@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <script src="scripts.js" defer></script>
+    <title>Fellow Weather App</title>
+</head>
+
+<body class="body">
+    <div class="left-column">
+        <form action="">
+            <label form="search" class="add-location"></label>
+            <input type="text" id="search-city" class="search-city" name="search-city" placeholder="Enter City" required />
+            <input type="text" id="search-state" class="search-state" name="search-state" placeholder="Enter State"/>
+            <input type="text" id="search-country" class="search-country" name="search-country" placeholder="Enter Country"
+                required />
+            <div class="button-div">
+                <button type="button" class="search-button">Search</button>
+                <button class="clear-button">Delete</button>
+            </div>
+        </form>
+    </div>
+    <div class="display-current-weather">
+        <img class="current-weather-image">
+    </div>
+    <div class="forecast-box">
+
+            <div class="daily-forecast-box day-one-box">
+                <div class="day-one day"></div>
+                <div><img class="weather-icon-1 icon" src="#"></div>
+                <div class="one-temp-high high"></div>
+                <div class="one-temp-low low"></div>
+            </div>
+
+            <div class="daily-forecast-box">
+                <div class="day-two day"></div>
+                <img class="weather-icon-2 icon" src="#">
+                <div class="two-temp-high high"></div>
+                <div class="two-temp-low low"></div>
+            </div>
+
+            <div class="daily-forecast-box">
+                <div class="day-three day"></div>
+                <img class="weather-icon-3 icon" src="#">
+                <div class="three-temp-high high"></div>
+                <div class="three-temp-low low"></div>
+            </div>
+
+            <div class="daily-forecast-box">
+                <div class="day-four day"></div>
+                <img class="weather-icon-4 icon" src="#">
+                <div class="four-temp-high high"></div>
+                <div class="four-temp-low low"></div>
+            </div>
+        
+            <div class="daily-forecast-box">
+                <div class="day-five day"></div>
+                <img class="weather-icon-5 icon" src="#">
+                <div class="five-temp-high high"></div>
+                <div class="five-temp-low low"></div>
+            </div>
+
+            <div class="daily-forecast-box">
+                <div class="day-six day"></div>
+                <img class="weather-icon-6 icon" src="#">
+                <div class="six-temp-high high"></div>
+                <div class="six-temp-low low"></div>
+            </div>
+        <footer>
+            <p class="footer-credit">Icons by <a href="https://icons8.com/"> Icons8.com</a></p>
+        </footer>
+</body>
+
+</html>

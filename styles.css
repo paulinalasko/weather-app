@@ -1,0 +1,165 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    position: relative;
+    background: url(./assets/sven-pieren-unsplash.jpg);
+    background-size: cover;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    padding: 5px;
+    color: black;
+}
+
+.left-column {
+    grid-column: 1/2;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 20px;
+    margin-left: -20px;
+    gap: 20px;
+    width: 220px;
+    height: 300px;
+    padding: 5px;
+}
+
+input[type='text'] {
+    appearance: none;
+    text-align: left;
+    height: 25px;
+    width: 200px;
+    border-radius: 10px;
+    padding: 5px;
+    border: none;
+    background-color: rgb(241, 231, 235, 0.5);
+    font-size: 15px;
+}
+
+.button-div {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+}
+
+button {
+    appearance: none;
+    border-radius: 12px;
+    height: 30px;
+    width: 80px;
+    background-color: rgb(251, 251, 239, 0.5);
+    border: 1px solid gray;
+    font-size: 15px;
+}
+
+.add-location, .display-current-weather {
+    font-size: 26px;
+    font-weight: 800;
+}
+
+.city-title {
+    color: white;
+    font-size: 36px;
+    margin-bottom: 5px;
+}
+
+.icon {
+    width: 30px;
+    height: 30px;
+}
+
+.display-current-weather {
+    grid-column: 3/4;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    width: 300px;
+    gap: 10px;
+    margin-top: 50px;
+    margin-right: 20px;
+    background-color: rgb(0, 0, 0, 0.2);
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.current-weather-box {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.grid-icon {
+    grid-column: 1;
+}
+
+.grid-element {
+    grid-column: 2/3;
+    margin-left: -20px;
+}
+
+.forecast-box {
+    grid-column: 1/4;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 120px;
+    color: white;
+}
+
+.daily-forecast-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    padding: 10px;
+    width: 150px;
+    height: 150px;
+    background-color: rgb(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.high, .day {
+    font-size: 30px;
+}
+
+.low {
+    font-size: 20px;
+}
+
+footer {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    bottom: -60px;
+}
+
+.footer-credit > a {
+    text-decoration: none;
+    color: white;
+}
+
+.footer-credit {
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+
+/* Pseudo-classes */
+
+button:hover {
+    transform: scale(1.05);
+}
+
