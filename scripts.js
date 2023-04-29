@@ -4,6 +4,7 @@
 /* eslint-disable eqeqeq */
 // eslint-disable-next-line no-unused-vars
 const getDOM = (() => {
+  const myKey = config.MY_KEY;
   const body = document.querySelector('.body');
   const searchButton = document.querySelector('.search-button')
   const clearButton = document.querySelector('.clear-button')
@@ -29,12 +30,12 @@ const getDOM = (() => {
 async function getWeather (searchCity, searchState, searchCountry) {
   try {
     // Fetch data and wait for JSON data
-    const response = await fetch('https://api.openweathermap.org/data/2.5/weather?q=' + searchCity + ',' + searchState + ',' + searchCountry + '&units=imperial&APPID=8c251625ce79fc90d1a93ba9fe2bfea5', { mode: 'cors' })
+    const response = await fetch('https://api.openweathermap.org/data/2.5/weather?q=' + searchCity + ',' + searchState + ',' + searchCountry + '&units=imperial&APPID=MY_KEY', { mode: 'cors' })
     const weatherData = await response.json();
     console.log(weatherData);
 
     // Fetch forecast data
-    const forecastResponse = await fetch(`https://api.openweathermap.org/data/2.5/onecall?lat=${weatherData.coord.lat}&lon=${weatherData.coord.lon}&units=imperial&appid=8c251625ce79fc90d1a93ba9fe2bfea5`, { mode: 'cors' })
+    const forecastResponse = await fetch(`https://api.openweathermap.org/data/2.5/onecall?lat=${weatherData.coord.lat}&lon=${weatherData.coord.lon}&units=imperial&appid=MY_KEY`, { mode: 'cors' })
     const forecastData = await forecastResponse.json();
     console.log(forecastData);
 
